@@ -19,7 +19,7 @@ export default function NotFound() {
           <p className="mt-4 max-w-md text-white/70">
             Essa página saiu para dar uma volta na Rua da Alegria. Bora voltar pra home?
           </p>
-          <Link to="/" className="btn-elegant is-electric mt-8">
+          <Link to="/" className="btn-elegant mt-8 !bg-[#0100F4] !text-[#ffffff] hover:!bg-[#FF00E7] hover:!text-[#ffffff]">
             ← Voltar para o início
           </Link>
         </div>
