@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { usePageMeta } from '@/hooks/usePageMeta'
+import notFoundImage from '@/assets/not-found.png'
 
 export default function NotFound() {
   usePageMeta({
@@ -22,7 +23,15 @@ export default function NotFound() {
             ← Voltar para o início
           </Link>
         </div>
-        <div className="h-[60vh] bg-gradient-to-br from-[#0100f4] via-[#3a0aa8] to-[#fb00e4]" />
+        <div className="relative h-[60vh] overflow-hidden bg-gradient-to-br from-[#0100f4] via-[#3a0aa8] to-[#fb00e4]">
+          <img
+            src={notFoundImage}
+            alt="Alegria Expo Brutos"
+            className="h-full w-full object-cover"
+          />
+
+          <div className="absolute inset-0 bg-black/25" />
+        </div>
       </div>
     </div>
   )
