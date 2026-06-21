@@ -141,7 +141,7 @@ export default function RuaDaAlegria() {
           </div>
           <Link
             to="/expositores"
-            className="btn-elegant is-magenta self-end justify-self-start md:justify-self-end"
+            className="btn-elegant self-end justify-self-start md:justify-self-end !bg-[#FF00E7] !text-[#ffffff] hover:!bg-[#0100F4] hover:!text-[#ffffff]"
           >
             Conheça os expositores →
           </Link>
