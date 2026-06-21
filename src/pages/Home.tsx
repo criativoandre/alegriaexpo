@@ -1,6 +1,11 @@
 import { Link } from 'react-router-dom'
 import { Marquee } from '@/components/site/Marquee'
 import { usePageMeta } from '@/hooks/usePageMeta'
+import heroFrameImage from '@/assets/hero-frame.jpg';
+import cardImg01 from '@/assets/card-1.png'
+import cardImg02 from '@/assets/card-2.png'
+import cardImg03 from '@/assets/card-3.png'
+import dateCardBg from '@/assets/date-card-bg.png'
 
 export default function Home() {
   usePageMeta({
@@ -14,67 +19,87 @@ export default function Home() {
 
   return (
     <>
-      {/* HERO — split screen with overlapping card, à la Saffire */}
-      <section className="relative bg-[#070708] text-white">
-        <div className="grid md:grid-cols-2 min-h-[100vh]">
-          {/* LEFT: gradient panel with overlaid headline */}
-          <div className="relative panel-electric overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/70" />
-            <div className="relative h-full flex flex-col justify-end px-6 md:px-14 pb-16 pt-40">
-              <div className="tag-soft text-[#f3e9d6]">Alegria · 7ª Edição</div>
-              <h1 className="mt-8 font-display text-[14vw] md:text-[7.5rem] leading-[0.9] text-[#f3e9d6]">
-                Abrace o brilho
-                <br />
-                <span className="display-italic">do que é</span>
-                <br />
-                único.
-              </h1>
-              <div className="mt-12">
-                <Link to="/expositores" className="btn-elegant is-light">
-                  Nossas coleções →
-                </Link>
-              </div>
-            </div>
-          </div>
+{/* HERO — split screen with center frame */}
+<section className="relative bg-[#070708] text-white overflow-hidden">
+  <div className="grid md:grid-cols-2 min-h-[100vh]">
 
-          {/* RIGHT: noir panel with stacked content + overlapping card */}
-          <div className="relative panel-noir flex items-center">
-            <div className="px-6 md:px-14 pt-40 pb-20 w-full">
-              <div className="font-display italic text-4xl md:text-6xl text-[#f3e9d6] leading-tight">
-                Edição 2026
-              </div>
-              <p className="mt-8 max-w-md text-white/75 leading-relaxed text-lg">
-                A maior feira de semijoias em <strong>bruto</strong> da América Latina. Três dias
-                direto com quem fabrica, no coração da Rua da Alegria, em Limeira.
-              </p>
-              <div className="mt-10 grid grid-cols-3 gap-6 border-t border-white/15 pt-8">
-                {[
-                  { k: '+50', v: 'Marcas' },
-                  { k: '03', v: 'Dias' },
-                  { k: '7ª', v: 'Edição' },
-                ].map((s) => (
-                  <div key={s.v}>
-                    <div className="font-display text-5xl md:text-6xl text-[#f3e9d6]">{s.k}</div>
-                    <div className="mt-2 font-mono text-[10px] uppercase tracking-[0.32em] text-white/55">
-                      {s.v}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+    {/* LEFT */}
+    <div className="relative panel-electric overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/70" />
+
+      <div className="relative z-10 h-full flex flex-col justify-center px-6 md:px-14 md:pr-[24vw] py-24 md:py-32">
+        <div className="tag-soft text-[#f3e9d6]">
+          Alegria · 7ª Edição
         </div>
 
-        {/* Floating overlapping card spanning both halves */}
-        <div className="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 w-[28%] aspect-[3/4] panel-magenta shadow-2xl">
-          <div className="h-full w-full flex flex-col justify-end p-8">
-            <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-white/70">
-              26 · 27 · 28 Maio
-            </div>
-            <div className="mt-3 font-display italic text-3xl text-white">Rua da Alegria</div>
-          </div>
+        <h1 className="mt-8 font-display text-[14vw] md:text-[6.5rem] xl:text-[7.5rem] leading-[0.9] text-[#f3e9d6]">
+          Abrace o brilho
+          <br />
+          <span className="display-italic">do que é</span>
+          <br />
+          único.
+        </h1>
+      </div>
+    </div>
+
+    {/* RIGHT */}
+    <div className="relative panel-noir flex items-center">
+      <div className="relative z-10 px-6 md:px-14 md:pl-[24vw] py-24 md:py-32 w-full">
+        <div className="font-display italic text-4xl md:text-6xl text-[#f3e9d6] leading-tight">
+          Edição 2026
         </div>
-      </section>
+
+        <p className="mt-8 max-w-md text-white/75 leading-relaxed text-lg">
+          A maior feira de semijoias em <strong>bruto</strong> da América Latina.
+          Três dias direto com quem fabrica, no coração da Rua da Alegria, em Limeira.
+        </p>
+
+        <div className="mt-10 grid grid-cols-3 gap-6 border-t border-white/15 pt-8">
+          {[
+            { k: '+50', v: 'Marcas' },
+            { k: '03', v: 'Dias' },
+            { k: '7ª', v: 'Edição' },
+          ].map((s) => (
+            <div key={s.v}>
+              <div className="font-display text-5xl md:text-6xl text-[#f3e9d6]">
+                {s.k}
+              </div>
+              <div className="mt-2 font-mono text-[10px] uppercase tracking-[0.32em] text-white/55">
+                {s.v}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* CENTER FRAME */}
+  <div className="hidden md:block absolute left-1/2 top-1/2 z-20 w-[30vw] max-w-[460px] min-w-[340px] aspect-[3/4] -translate-x-1/2 -translate-y-1/2">
+    <div className="relative h-full w-full panel-magenta shadow-2xl overflow-hidden">
+
+      <img
+        src={heroFrameImage}
+        alt="Feira de semijoias Rua da Alegria"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+
+      <div className="absolute inset-0 bg-black/35" />
+
+      <div className="absolute inset-6 border border-white/35 pointer-events-none" />
+
+      <div className="relative z-10 h-full w-full flex flex-col justify-end p-10">
+        <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-white/70">
+          26 · 27 · 28 Maio
+        </div>
+
+        <div className="mt-3 font-display italic text-4xl text-white">
+          Rua da Alegria
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       <Marquee
         variant="black"
@@ -89,31 +114,35 @@ export default function Home() {
 
       {/* ABOUT — editorial split */}
       <section className="bg-[#070708] text-white">
-        <div className="container-edge py-28 md:py-40 grid gap-16 md:grid-cols-[1fr_1.3fr] items-start">
+        <div className="container-edge py-28 md:py-40 grid gap-16 md:grid-cols-[1fr_1.3fr] items-center">
+
           <div className="md:sticky md:top-32">
             <div className="tag-soft">A feira</div>
+
             <h2 className="mt-8 font-display text-5xl md:text-7xl text-[#f3e9d6] leading-[1]">
-              Conectando você <span className="display-italic text-[#fb00e4]">diretamente</span>{' '}
+              Conectando você{' '}
+              <span className="display-italic text-[#fb00e4]">diretamente</span>{' '}
               com quem fabrica.
             </h2>
           </div>
+
           <div className="space-y-7 text-white/75 text-lg leading-relaxed">
             <p className="text-2xl md:text-3xl font-display italic text-white/95 leading-snug">
               Três dias para descobrir fornecedores, negociar direto da fonte e sair com
               oportunidades reais de negócio.
             </p>
+
             <p>
               O evento conecta fabricantes e compradores em um ambiente pensado para gerar
               negócios, fortalecer parcerias e apresentar novidades do setor.
             </p>
+
             <p className="text-white/90">
               Mais do que uma feira, é um ponto de encontro estratégico para quem quer crescer no
               mercado.
             </p>
-            <Link to="/expositores" className="btn-elegant is-magenta mt-4">
-              Quero participar →
-            </Link>
           </div>
+
         </div>
       </section>
 
@@ -142,32 +171,53 @@ export default function Home() {
                 t: 'Direto da fonte',
                 d: 'Sem intermediários. Conheça fabricantes, condições reais e prazos honestos.',
                 panel: 'panel-noir',
+                image: cardImg01,
               },
               {
                 n: '02',
                 t: 'Tendências antes',
                 d: 'Novos designs e coleções que vão pautar a próxima temporada do varejo.',
                 panel: 'panel-electric',
+                image: cardImg02,
               },
               {
                 n: '03',
                 t: 'Networking real',
                 d: 'Parcerias com lojistas, revendedores e marcas que movem o mercado.',
                 panel: 'panel-noir',
+                image: cardImg03,
               },
             ].map((c) => (
               <article
                 key={c.n}
-                className={`${c.panel} p-10 md:p-12 min-h-[420px] flex flex-col justify-between`}
+                className={`${c.panel} relative overflow-hidden p-10 md:p-12 min-h-[420px] flex flex-col justify-between`}
               >
-                <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-white/60">
-                  {c.n} / 03
+                {/* Imagem + overlay */}
+                <div className="absolute inset-0">
+                  <img
+                    src={c.image}
+                    alt=""
+                    className="h-full w-full object-cover opacity-25"
+                  />
+
+                  {/* Overlay somente sobre a imagem */}
+                  <div className="absolute inset-0" />
                 </div>
-                <div>
+
+                {/* Número do card */}
+                <div className="relative z-10 font-mono text-[10px] uppercase tracking-[0.32em] text-white/60">
+                  
+                </div>
+
+                {/* Conteúdo */}
+                <div className="relative z-10">
                   <h3 className="font-display text-4xl md:text-5xl text-[#f3e9d6] leading-tight">
                     {c.t}
                   </h3>
-                  <p className="mt-5 text-white/80 leading-relaxed">{c.d}</p>
+
+                  <p className="mt-5 text-white/80 leading-relaxed">
+                    {c.d}
+                  </p>
                 </div>
               </article>
             ))}
@@ -185,7 +235,7 @@ export default function Home() {
             </h2>
           </div>
           <div className="md:justify-self-end">
-            <Link to="/patrocinadores" className="btn-elegant is-light">
+            <Link to="/patrocinadores" className="btn-elegant !text-[#ffffff] hover:!bg-[#0100F4] hover:!text-[#ffffff]">
               Conheça os patrocinadores →
             </Link>
           </div>
@@ -206,19 +256,36 @@ export default function Home() {
                 Conheça a lista completa de expositores da Alegria Expo Brutos e planeje sua
                 visita à Rua da Alegria.
               </p>
-              <Link to="/expositores" className="btn-elegant is-magenta mt-10">
+              <Link to="/expositores" className="btn-elegant mt-10 !bg-[#0100F4] !text-[#ffffff] hover:!bg-[#FF00E7] hover:!text-[#ffffff]">
                 Conheça os expositores →
               </Link>
             </div>
-            <div className="panel-electric p-12 md:p-16 flex flex-col justify-between min-h-[420px]">
-              <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-white/70">
+            <div className="panel-electric relative overflow-hidden p-12 md:p-16 flex flex-col justify-between min-h-[420px]">
+
+              {/* Imagem de fundo */}
+              <img
+                src={dateCardBg}
+                alt=""
+                className="absolute inset-0 h-full w-full object-cover opacity-75"
+              />
+
+              {/* Overlay para deixar a imagem sutil */}
+              <div className="absolute inset-0 bg-[#070708]/70" />
+
+              {/* Conteúdo */}
+              <div className="relative z-10 font-mono text-[10px] uppercase tracking-[0.32em] text-white/70">
                 Próxima edição
               </div>
-              <div>
+
+              <div className="relative z-10">
                 <div className="font-display text-[7rem] md:text-[10rem] leading-none text-[#f3e9d6]">
                   26
                 </div>
-                <div className="font-display italic text-3xl mt-2 text-white">27 · 28 · Maio</div>
+
+                <div className="font-display italic text-3xl mt-2 text-white">
+                  27 · 28 · Maio
+                </div>
+
                 <div className="mt-4 font-mono text-[11px] uppercase tracking-[0.32em] text-[#f3e9d6]">
                   Rua da Alegria · Limeira
                 </div>
