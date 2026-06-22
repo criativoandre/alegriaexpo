@@ -42,6 +42,31 @@ export default function Home() {
       </div>
     </div>
 
+    {/* CENTER FRAME — MOBILE */}
+    <div className="md:hidden bg-[#070708] px-6 py-10">
+      <div className="relative mx-auto w-full max-w-[340px] aspect-[3/4] panel-magenta shadow-2xl overflow-hidden">
+        <img
+          src={heroFrameImage}
+          alt="Feira de semijoias Rua da Alegria"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+
+        <div className="absolute inset-0 bg-black/35" />
+
+        <div className="absolute inset-5 border border-white/35 pointer-events-none" />
+
+        <div className="relative z-10 h-full w-full flex flex-col justify-end p-8">
+          <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-white/70">
+            26 · 27 · 28 Maio
+          </div>
+
+          <div className="mt-3 font-display italic text-3xl text-white">
+            Rua da Alegria
+          </div>
+        </div>
+      </div>
+    </div>
+
     {/* RIGHT */}
     <div className="relative panel-noir flex items-center">
       <div className="relative z-10 px-6 md:px-14 md:pl-[24vw] py-24 md:py-32 w-full">
@@ -74,10 +99,9 @@ export default function Home() {
     </div>
   </div>
 
-  {/* CENTER FRAME */}
+  {/* CENTER FRAME — DESKTOP */}
   <div className="hidden md:block absolute left-1/2 top-1/2 z-20 w-[30vw] max-w-[460px] min-w-[340px] aspect-[3/4] -translate-x-1/2 -translate-y-1/2">
     <div className="relative h-full w-full panel-magenta shadow-2xl overflow-hidden">
-
       <img
         src={heroFrameImage}
         alt="Feira de semijoias Rua da Alegria"
@@ -100,7 +124,6 @@ export default function Home() {
     </div>
   </div>
 </section>
-
       <Marquee
         variant="black"
         items={[
