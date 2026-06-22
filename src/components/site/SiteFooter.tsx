@@ -4,7 +4,7 @@ import logo from '@/assets/logo-alegria.png'
 export function SiteFooter() {
   return (
     <footer className="bg-[#070708] text-white border-t border-white/10">
-      <div className="container-edge py-20 grid gap-14 md:grid-cols-[1.5fr_1fr_1.2fr]">
+      <div className="container-edge py-16 md:py-20 grid gap-14 md:grid-cols-[1.5fr_1fr_1.2fr]">
 
         {/* Logo + descrição */}
         <div>
@@ -12,7 +12,7 @@ export function SiteFooter() {
             <img
               src={logo}
               alt="Alegria Expo Brutos"
-              className="h-20 md:h-18 w-auto object-contain"
+              className="h-12 md:h-20 w-auto object-contain"
             />
           </div>
 
@@ -81,7 +81,7 @@ function FooterCol({ title, links }: { title: string; links: { to: string; label
       <ul className="space-y-3">
         {links.map((l) => (
           <li key={l.label}>
-            <Link to={l.to} className="text-white/80 hover:text-[#fb00e4] transition-colors">
+            <Link to={l.to} className="text-white/80 hover:text-[#FF00E7] transition-colors">
               {l.label}
             </Link>
           </li>
