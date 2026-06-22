@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import logo from '@/assets/logo-alegria.png'
+import logo from '@/assets/logo-alegria.webp'
 
 export function SiteFooter() {
   return (
