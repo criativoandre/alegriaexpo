@@ -282,7 +282,7 @@ export default function Home() {
               </p>
               <Link
                 to="/expositores"
-                className="btn-elegant mt-8 !px-8 !py-3 !text-xs !bg-[#0100F4] !text-[#ffffff] hover:!bg-[#FF00E7] hover:!text-[#ffffff]"
+                className="btn-elegant mt-8 !px-8 md:!px-10 !py-3 md:!py-4 !text-xs md:!text-sm !bg-[#0100F4] !text-[#ffffff] hover:!bg-[#FF00E7] hover:!text-[#ffffff]"
               >
                 Conheça os expositores →
               </Link>
