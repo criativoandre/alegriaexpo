@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
-import logo from '@/assets/logo-alegria.png'
+import logo from '@/assets/logo-alegria.webp'
 
 const nav = [
   { to: '/', label: 'Home' },
