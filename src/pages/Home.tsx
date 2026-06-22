@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom'
 import { Marquee } from '@/components/site/Marquee'
 import { usePageMeta } from '@/hooks/usePageMeta'
-import heroFrameImage from '@/assets/hero-frame.jpg';
-import cardImg01 from '@/assets/card-1.png'
-import cardImg02 from '@/assets/card-2.png'
-import cardImg03 from '@/assets/card-3.png'
-import dateCardBg from '@/assets/date-card-bg.png'
+import heroFrameImage from '@/assets/hero-frame.webp';
+import cardImg01 from '@/assets/card-1.webp'
+import cardImg02 from '@/assets/card-2.webp'
+import cardImg03 from '@/assets/card-3.webp'
+import dateCardBg from '@/assets/date-card-bg.webp'
 
 export default function Home() {
   usePageMeta({
