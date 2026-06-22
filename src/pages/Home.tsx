@@ -280,7 +280,10 @@ export default function Home() {
                 Conheça a lista completa de expositores da Alegria Expo Brutos e planeje sua
                 visita à Rua da Alegria.
               </p>
-              <Link to="/expositores" className="btn-elegant mt-10 !bg-[#0100F4] !text-[#ffffff] hover:!bg-[#FF00E7] hover:!text-[#ffffff]">
+              <Link
+                to="/expositores"
+                className="btn-elegant mt-8 !px-8 !py-3 !text-xs !bg-[#0100F4] !text-[#ffffff] hover:!bg-[#FF00E7] hover:!text-[#ffffff]"
+              >
                 Conheça os expositores →
               </Link>
             </div>
