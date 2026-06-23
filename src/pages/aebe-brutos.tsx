@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { usePageMeta } from '@/hooks/usePageMeta'
 
-export default function aebe-brutos() {
+export default function AebeBrutos() {
   usePageMeta({
     title: 'AEBE Brutos · Alegria Expo Brutos',
     description:
