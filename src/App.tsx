@@ -7,7 +7,6 @@ import Home from '@/pages/Home'
 import RuaDaAlegria from '@/pages/RuaDaAlegria'
 import Expositores from '@/pages/Expositores'
 import Patrocinadores from '@/pages/Patrocinadores'
-import PaginaModelo from '@/pages/PaginaModelo'
 import NotFound from '@/pages/NotFound'
 
 function ScrollToTop() {
@@ -30,7 +29,6 @@ export default function App() {
             <Route path="/rua-da-alegria" element={<RuaDaAlegria />} />
             <Route path="/expositores" element={<Expositores />} />
             <Route path="/patrocinadores" element={<Patrocinadores />} />
-            <Route path="/a-pagina-modelo" element={<PaginaModelo />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
