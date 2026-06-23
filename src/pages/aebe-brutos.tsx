@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { usePageMeta } from '@/hooks/usePageMeta'
 
-export default function AebeBrutos() {
+export default function PaginaModelo() {
   usePageMeta({
     title: 'AEBE Brutos · Alegria Expo Brutos',
     description:
@@ -34,7 +34,7 @@ export default function AebeBrutos() {
         </div>
       </section>
 
-{/* HERO — split */}
+      {/* HERO — split */}
 <section className="relative bg-[#070708] text-white">
   <div className="grid md:grid-cols-2 min-h-[80vh]">
     <div className="relative panel-magenta flex items-center">
@@ -44,10 +44,10 @@ export default function AebeBrutos() {
         </div>
 
         <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-6 md:gap-8">
-          <div className="shrink-0 w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 bg-white border border-white/30 flex items-center justify-center overflow-hidden rounded-xl p-2">
+          <div className="shrink-0 w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 bg-white/5 border border-white/30 flex items-center justify-center overflow-hidden">
             <img
-              src="/expositores/24.jpg"
-              alt="Logo A&B Brutos"
+              src="/expositores/aebe-brutos.webp"
+              alt="AEBE Brutos"
               className="w-full h-full object-contain"
               loading="eager"
             />
@@ -56,7 +56,7 @@ export default function AebeBrutos() {
           <h1 className="font-display text-4xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl leading-[1.05] text-[#f3e9d6]">
             A&amp;B
             <br />
-            <span className="display-italic font-normal">Brutos.</span>
+            <span className="display-italic font-normal">Brutos</span>
           </h1>
         </div>
       </div>
@@ -129,22 +129,22 @@ export default function AebeBrutos() {
         {
           t: 'Brincos',
           d: 'Linha completa, do básico ao statement.',
-          img: '/expositores/colecao-brincos.webp',
+          img: '/expositores/aebe-brutos/colecao-brincos.webp',
         },
         {
           t: 'Brincos em tubos',
           d: 'Formato exclusivo da casa.',
-          img: '/expositores/colecao-brincos-em-tubos.webp',
+          img: '/expositores/aebe-brutos/colecao-brincos-em-tubos.webp',
         },
         {
           t: 'Pulseiras',
           d: 'Clássicas e tendência.',
-          img: '/expositores/colecao-pulseiras.webp',
+          img: '/expositores/aebe-brutos/colecao-pulseiras.webp',
         },
         {
           t: 'Colares & tornozeleiras',
           d: 'Para compor o look inteiro.',
-          img: '/expositores/colecao-colares-tornozeleiras.webp',
+          img: '/expositores/aebe-brutos/colecao-colares-tornozeleiras.webp',
         },
       ].map((c) => (
         <div
@@ -237,6 +237,14 @@ export default function AebeBrutos() {
 <section className="bg-[#070708] text-white border-t border-white/10">
   <div className="container-edge pt-20 pb-10">
     <div className="tag-soft">Localização</div>
+
+    <h2 className="mt-8 font-display text-5xl md:text-7xl text-[#f3e9d6] leading-[1]">
+      Rua da <span className="display-italic text-[#fb00e4]">Alegria.</span>
+    </h2>
+
+    <p className="mt-6 max-w-2xl text-lg text-white/75 leading-relaxed">
+      Rua Beatriz Bragotto Dermond - Jardim Boa Vista, Limeira - SP, 13486-326
+    </p>
   </div>
 
   <div className="relative h-[450px] w-full overflow-hidden">
@@ -256,5 +264,16 @@ export default function AebeBrutos() {
   </div>
 </section>
     </>
+  )
+}
+
+function Stat({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="border-l border-white/20 pl-5">
+      <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-white/50">
+        {label}
+      </div>
+      <div className="mt-2 font-display text-2xl text-[#f3e9d6] leading-tight">{value}</div>
+    </div>
   )
 }
