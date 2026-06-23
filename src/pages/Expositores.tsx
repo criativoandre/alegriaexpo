@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import { usePageMeta } from '@/hooks/usePageMeta'
 
 const expositores = [
-  const expositores = [
   { name: 'Adonai Brutos', category: 'Brutos', booth: '01', slug: 'adonai-brutos', logo: '/expositores/adonai-brutos.webp' },
   { name: 'AEBE Brutos', category: 'Brutos', booth: '02', slug: 'aebe-brutos', logo: '/expositores/aebe-brutos.webp' },
   { name: 'Agape Brutos', category: 'Brutos', booth: '03', slug: 'agape-brutos', logo: '/expositores/agape-brutos.webp' },
