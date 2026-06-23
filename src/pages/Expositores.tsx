@@ -29,7 +29,7 @@ const expositores = [
   { name: 'Princesa Brutos', category: 'Brutos', booth: '24', slug: 'princesa-brutos', logo: '/expositores/princesa-brutos.webp' },
   { name: 'Rei das Pulseiras', category: 'Pulseiras', booth: '25', slug: 'rei-das-pulseiras', logo: '/expositores/rei-das-pulseiras.webp' },
   { name: 'Rheal Compose', category: 'Semijoias', booth: '26', slug: 'rheal-compose', logo: '/expositores/rheal-compose.webp' },
-  { name: 'Safira', category: 'Semijoias', booth: '27', slug: 'safira', logo: '/expositores/safira.webp' },
+  { name: 'Safira Brutos', category: 'Semijoias', booth: '27', slug: 'safira-brutos', logo: '/expositores/safira-brutos.webp' },
   { name: 'Santana Brutos', category: 'Brutos', booth: '28', slug: 'santana-brutos', logo: '/expositores/santana-brutos.webp' },
   { name: 'Tank Brutos', category: 'Brutos', booth: '29', slug: 'tank-brutos', logo: '/expositores/tank-brutos.webp' },
   { name: 'Toda Diva', category: 'Acessórios', booth: '30', slug: 'toda-diva', logo: '/expositores/toda-diva.webp' },
