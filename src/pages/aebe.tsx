@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
 import { usePageMeta } from '@/hooks/usePageMeta'
 
-export default function PaginaModelo() {
+export default function aebe() {
   usePageMeta({
-    title: 'A&B Brutos — Página modelo · Alegria Expo Brutos',
+    title: 'AEBE Brutos · Alegria Expo Brutos',
     description:
       'Modelo de página de expositor da Alegria Expo Brutos. Use esta página como base para apresentar cada marca participante.',
-    ogTitle: 'A&B Brutos · Página modelo',
+    ogTitle: 'AEBE Brutos · Alegria Expo Brutos',
     ogDescription: 'A confluência de elegância e tendência em acessórios de moda.',
   })
 
@@ -176,66 +176,89 @@ export default function PaginaModelo() {
 </section>
 
       {/* PERSONAL */}
-      <section className="bg-[#070708] text-white">
-        <div className="container-edge py-28 md:py-36 grid gap-12 md:grid-cols-[1.3fr_1fr] items-end">
-          <div>
-            <div className="tag-soft">Atendimento</div>
-            <h2 className="mt-8 font-display text-5xl md:text-7xl text-[#f3e9d6] leading-[1]">
-              Cada interação é <span className="display-italic text-[#fb00e4]">moldada</span> para
-              você.
-            </h2>
-            <p className="mt-8 max-w-2xl text-lg text-white/75 leading-relaxed">
-              Os acessórios da A&amp;B Brutos são mais do que adornos: são extensões da persona
-              feminina, projetadas para realçar a beleza com sutileza e elegância. Declarações de
-              estilo que comunicam apreciação pela moda contemporânea.
-            </p>
-          </div>
-          <div className="md:justify-self-end">
-            <Link to="/expositores" className="btn-elegant">
-              ← Voltar para expositores
-            </Link>
-          </div>
-        </div>
-      </section>
+<section className="bg-[#070708] text-white">
+  <div className="container-edge py-28 md:py-36">
+    <div className="max-w-5xl mx-auto">
+      <div className="tag-soft">Atendimento</div>
+
+      <h2 className="mt-8 font-display text-5xl md:text-7xl text-[#f3e9d6] leading-[1]">
+        Cada interação é <span className="display-italic text-[#fb00e4]">moldada</span> para
+        você.
+      </h2>
+
+      <div className="mt-10 space-y-6 text-lg md:text-xl text-white/75 leading-relaxed">
+        <p>
+          Os acessórios da A&amp;B Brutos são mais do que adornos: são extensões da identidade
+          feminina, pensados para realçar a beleza com sutileza, elegância e personalidade.
+        </p>
+
+        <p>
+          Cada peça carrega uma proposta de estilo, combinando tendências contemporâneas com
+          acabamento cuidadoso para atender diferentes perfis, ocasiões e formas de expressão.
+        </p>
+
+        <p>
+          O atendimento valoriza a proximidade com o cliente, oferecendo uma experiência mais
+          atenta, consultiva e alinhada às necessidades de quem busca acessórios marcantes para
+          compor sua coleção.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* VISIT */}
-      <section className="panel-electric text-white">
-        <div className="container-edge py-24 md:py-32 grid md:grid-cols-2 gap-10 items-center">
-          <h2 className="font-display text-5xl md:text-7xl text-[#f3e9d6] leading-[1]">
-            Venha nos <span className="display-italic">visitar.</span>
-          </h2>
-          <div className="md:justify-self-end space-y-4 md:text-right">
-            <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-white/65">
-              Estande 01 · Rua da Alegria
-            </div>
-            <div className="font-display italic text-3xl md:text-4xl text-[#f3e9d6]">
-              26 · 27 · 28 de Maio
-            </div>
-            <a
-              href="https://wa.me/5519992260693"
-              className="btn-elegant is-magenta mt-4 inline-flex"
-            >
-              Falar no WhatsApp →
-            </a>
-          </div>
-        </div>
-      </section>
+<section className="panel-electric text-white">
+  <div className="container-edge py-24 md:py-32 grid md:grid-cols-2 gap-10 items-center">
+    <h2 className="font-display text-5xl md:text-7xl text-[#f3e9d6] leading-[1]">
+      Venha nos <span className="display-italic">visitar.</span>
+    </h2>
 
-      {/* MAP */}
-      <section className="relative bg-[#070708] border-t border-white/10 h-[450px] w-full overflow-hidden">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.873523528434!2d-47.4042898!3d-22.5651478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c87fd4025da295%3A0xc1566a0bcfa14144!2sRua%20da%20Alegria%20-%20Limeira%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1716300000000!5m2!1spt-BR!2sbr"
-          width="100%"
-          height="100%"
-          style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) grayscale(1) contrast(90%)' }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Mapa Rua da Alegria"
-          className="absolute inset-0 opacity-80"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#070708] via-transparent to-[#070708]/30 pointer-events-none" />
-      </section>
+    <div className="md:justify-self-end md:text-right flex flex-col justify-center items-start md:items-end min-h-[220px]">
+      <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-white/65">
+        Na Rua da Alegria
+      </div>
+
+      <div className="mt-4 font-display italic text-3xl md:text-4xl text-[#f3e9d6]">
+        26 · 27 · 28 de Maio
+      </div>
+
+      <a
+        href="https://wa.me/5519992260693"
+        className="btn-elegant is-magenta mt-10 inline-flex"
+      >
+        Falar no WhatsApp →
+      </a>
+    </div>
+  </div>
+</section>
+
+{/* MAP */}
+<section className="bg-[#070708] text-white border-t border-white/10">
+  <div className="container-edge pt-20 pb-10">
+    <div className="tag-soft">Localização</div>
+
+    <p className="mt-6 max-w-2xl text-lg text-white/75 leading-relaxed">
+      Rua Beatriz Bragotto Dermond - Jardim Boa Vista, Limeira - SP, 13486-326
+    </p>
+  </div>
+
+  <div className="relative h-[450px] w-full overflow-hidden">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.873523528434!2d-47.4042898!3d-22.5651478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c87fd4025da295%3A0xc1566a0bcfa14144!2sRua%20da%20Alegria%20-%20Limeira%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1716300000000!5m2!1spt-BR!2sbr"
+      width="100%"
+      height="100%"
+      style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg) grayscale(1) contrast(90%)' }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Mapa Rua da Alegria"
+      className="absolute inset-0 opacity-80"
+    />
+
+    <div className="absolute inset-0 bg-gradient-to-t from-[#070708] via-transparent to-[#070708]/30 pointer-events-none" />
+  </div>
+</section>
     </>
   )
 }
