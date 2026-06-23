@@ -35,114 +35,145 @@ export default function PaginaModelo() {
       </section>
 
       {/* HERO — split */}
-      <section className="relative bg-[#070708] text-white">
-        <div className="grid md:grid-cols-2 min-h-[80vh]">
-          <div className="relative panel-magenta flex items-center">
-            <div className="px-6 md:px-14 py-20 w-full">
-              <div className="flex flex-wrap gap-3 items-center">
-                <span className="tag is-electric">Expositor</span>
-              </div>
-              <div className="mt-8 flex flex-row items-center gap-4 sm:gap-6 md:gap-8">
-                <div className="shrink-0 w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-44 lg:h-44 bg-white/10 border border-white/30 backdrop-blur-sm flex items-center justify-center text-[#f3e9d6]/60 font-mono text-[9px] sm:text-xs uppercase tracking-[0.28em] text-center px-4 rounded-xl">
-                  Logo
-                  <br />
-                  aqui
-                </div>
-                <h1 className="font-display text-2xl sm:text-4xl md:text-3xl lg:text-4xl xl:text-5xl leading-[1.1] text-[#f3e9d6]">
-                  A&amp;B
-                  <br />
-                  <span className="display-italic font-normal">Brutos.</span>
-                </h1>
-              </div>
-            </div>
-          </div>
-          <div className="relative panel-noir flex items-center">
-            <div className="px-6 md:px-14 py-20">
-              <p className="font-display italic text-3xl md:text-4xl text-[#f3e9d6] leading-tight max-w-md">
-                A confluência de elegância e tendência em acessórios de moda.
-              </p>
-              <div className="mt-10 flex flex-wrap gap-3">
-                <a href="https://wa.me/5519992260693" className="btn-elegant is-magenta">
-                  (19) 99226.0693
-                </a>
-                <a href="#" className="btn-elegant">
-                  Instagram →
-                </a>
-              </div>
-            </div>
-          </div>
+<section className="relative bg-[#070708] text-white">
+  <div className="grid md:grid-cols-2 min-h-[80vh]">
+    <div className="relative panel-magenta flex items-center">
+      <div className="px-6 md:px-14 py-20 w-full">
+        <div className="flex flex-wrap gap-3 items-center">
+          <span className="tag is-electric">Expositor</span>
         </div>
-      </section>
+
+        <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-6 md:gap-8">
+          <div className="shrink-0 w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 bg-white/5 border border-white/30 flex items-center justify-center overflow-hidden">
+            <img
+              src="/expositores/aebe-brutos.webp"
+              alt="AEBE Brutos"
+              className="w-full h-full object-contain"
+              loading="eager"
+            />
+          </div>
+
+          <h1 className="font-display text-4xl sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl leading-[1.05] text-[#f3e9d6]">
+            A&amp;B
+            <br />
+            <span className="display-italic font-normal">Brutos.</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div className="relative panel-noir flex items-center">
+      <div className="px-6 md:px-14 py-20">
+        <p className="font-display italic text-3xl md:text-4xl text-[#f3e9d6] leading-tight max-w-md">
+          A confluência de elegância e tendência em acessórios de moda.
+        </p>
+
+        <div className="mt-10 flex flex-wrap gap-3">
+          <a href="https://wa.me/5519992260693" className="btn-elegant is-magenta">
+            (19) 99226.0693
+          </a>
+
+          <a href="#" className="btn-elegant">
+            Instagram →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* ABOUT */}
-      <section className="bg-[#070708] text-white">
-        <div className="container-edge py-28 md:py-36 grid gap-16 md:grid-cols-[1fr_1.4fr]">
-          <aside className="space-y-8 md:sticky md:top-32 md:self-start">
-            <Stat label="Especialidade" value="Acessórios de moda" />
-            <Stat label="Categoria" value="Brincos · Pulseiras · Colares" />
-            <Stat label="Atendimento" value="Personalizado · Sob demanda" />
-            <Stat label="Edição" value="7ª · 2026" />
-          </aside>
+<section className="bg-[#070708] text-white">
+  <div className="container-edge py-28 md:py-36">
+    <div className="max-w-5xl mx-auto space-y-7 text-lg md:text-xl text-white/80 leading-relaxed">
+      <div className="tag-soft">Sobre a marca</div>
 
-          <div className="space-y-7 text-lg text-white/80 leading-relaxed">
-            <div className="tag-soft">Sobre a marca</div>
-            <p className="font-display italic text-3xl md:text-4xl text-[#f3e9d6] leading-tight">
-              No cenário contemporâneo da moda, é inegável o papel crucial que os acessórios
-              desempenham na articulação do estilo e personalidade.
-            </p>
-            <p>
-              Entre as marcas que têm feito um trabalho notável nesse domínio, destaca-se a{' '}
-              <strong>A&amp;B Brutos</strong>, uma empresa dedicada a oferecer uma gama variada de
-              acessórios que seguem as tendências atuais e elevam a beleza feminina com sutileza e
-              elegância.
-            </p>
-            <p>
-              A A&amp;B Brutos faz um trabalho meticuloso ao selecionar peças que ressoam com as
-              preferências estilísticas contemporâneas, assegurando que suas ofertas estejam
-              sempre alinhadas com o que é atual e desejável.
-            </p>
-            <p>
-              Uma das marcas registradas é a ênfase intransigente na qualidade — cada cliente
-              merece nada menos que excelência, e essa convicção guia a seleção de cada peça.
-            </p>
-          </div>
-        </div>
-      </section>
+      <p className="font-display italic text-3xl md:text-5xl text-[#f3e9d6] leading-tight">
+        No cenário contemporâneo da moda, é inegável o papel crucial que os acessórios
+        desempenham na articulação do estilo e personalidade.
+      </p>
+
+      <p>
+        Entre as marcas que têm feito um trabalho notável nesse domínio, destaca-se a{' '}
+        <strong>A&amp;B Brutos</strong>, uma empresa dedicada a oferecer uma gama variada de
+        acessórios que seguem as tendências atuais e elevam a beleza feminina com sutileza e
+        elegância.
+      </p>
+
+      <p>
+        A A&amp;B Brutos faz um trabalho meticuloso ao selecionar peças que ressoam com as
+        preferências estilísticas contemporâneas, assegurando que suas ofertas estejam
+        sempre alinhadas com o que é atual e desejável.
+      </p>
+
+      <p>
+        Uma das marcas registradas é a ênfase intransigente na qualidade — cada cliente
+        merece nada menos que excelência, e essa convicção guia a seleção de cada peça.
+      </p>
+    </div>
+  </div>
+</section>
 
       {/* COLLECTION */}
-      <section className="panel-noir text-white border-y border-white/10">
-        <div className="container-edge py-28 md:py-36">
-          <div className="tag-soft">Coleção</div>
-          <h2 className="mt-8 font-display text-5xl md:text-7xl text-[#f3e9d6] leading-[1]">
-            Brincos. Pulseiras. <span className="display-italic text-[#fb00e4]">Tornozeleiras.</span>{' '}
-            Colares.
-          </h2>
+<section className="panel-noir text-white border-y border-white/10">
+  <div className="container-edge py-28 md:py-36">
+    <div className="tag-soft">Coleção</div>
 
-          <div className="mt-16 grid gap-px md:grid-cols-4 bg-white/10 border border-white/10">
-            {[
-              { t: 'Brincos', d: 'Linha completa, do básico ao statement.' },
-              { t: 'Brincos em tubos', d: 'Formato exclusivo da casa.' },
-              { t: 'Pulseiras', d: 'Clássicas e tendência.' },
-              { t: 'Colares & tornozeleiras', d: 'Para compor o look inteiro.' },
-            ].map((c, i) => (
-              <div
-                key={c.t}
-                className="panel-noir p-8 md:p-10 min-h-[280px] flex flex-col justify-between"
-              >
-                <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-white/55">
-                  {(i + 1).toString().padStart(2, '0')} / 04
-                </div>
-                <div>
-                  <h3 className="font-display text-3xl md:text-4xl text-[#f3e9d6] leading-tight">
-                    {c.t}
-                  </h3>
-                  <p className="mt-3 text-white/65 text-sm leading-relaxed">{c.d}</p>
-                </div>
-              </div>
-            ))}
+    <h2 className="mt-8 font-display text-5xl md:text-7xl text-[#f3e9d6] leading-[1]">
+      Brincos. Pulseiras. <span className="display-italic text-[#fb00e4]">Tornozeleiras.</span>{' '}
+      Colares.
+    </h2>
+
+    <div className="mt-16 grid gap-px sm:grid-cols-2 lg:grid-cols-4 bg-white/10 border border-white/10">
+      {[
+        {
+          t: 'Brincos',
+          d: 'Linha completa, do básico ao statement.',
+          img: '/expositores/aebe-brutos/colecao-brincos.webp',
+        },
+        {
+          t: 'Brincos em tubos',
+          d: 'Formato exclusivo da casa.',
+          img: '/expositores/aebe-brutos/colecao-brincos-em-tubos.webp',
+        },
+        {
+          t: 'Pulseiras',
+          d: 'Clássicas e tendência.',
+          img: '/expositores/aebe-brutos/colecao-pulseiras.webp',
+        },
+        {
+          t: 'Colares & tornozeleiras',
+          d: 'Para compor o look inteiro.',
+          img: '/expositores/aebe-brutos/colecao-colares-tornozeleiras.webp',
+        },
+      ].map((c) => (
+        <div
+          key={c.t}
+          className="group panel-noir min-h-[360px] flex flex-col overflow-hidden"
+        >
+          <div className="aspect-[4/3] w-full bg-white/5 overflow-hidden">
+            <img
+              src={c.img}
+              alt={c.t}
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+            />
+          </div>
+
+          <div className="p-8 md:p-10 flex-1 flex flex-col justify-end">
+            <h3 className="font-display text-3xl md:text-4xl text-[#f3e9d6] leading-tight">
+              {c.t}
+            </h3>
+
+            <p className="mt-3 text-white/65 text-sm leading-relaxed">
+              {c.d}
+            </p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* PERSONAL */}
       <section className="bg-[#070708] text-white">
@@ -206,16 +237,5 @@ export default function PaginaModelo() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#070708] via-transparent to-[#070708]/30 pointer-events-none" />
       </section>
     </>
-  )
-}
-
-function Stat({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="border-l border-white/20 pl-5">
-      <div className="font-mono text-[10px] uppercase tracking-[0.32em] text-white/50">
-        {label}
-      </div>
-      <div className="mt-2 font-display text-2xl text-[#f3e9d6] leading-tight">{value}</div>
-    </div>
   )
 }
